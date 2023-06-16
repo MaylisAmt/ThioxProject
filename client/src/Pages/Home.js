@@ -8,7 +8,6 @@ const Home = () => {
         <div>
             <Logo />
             <Navigation />
-            <h1>Home</h1>
             <div className='home' >
             <img src= {Photo} alt="photographer"/>
             <p>Ici se trouvera un court texte de description</p>
