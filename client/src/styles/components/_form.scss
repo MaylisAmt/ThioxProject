@@ -1,0 +1,55 @@
+.formtitle {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 50px 0px 35px;
+}
+
+.precisions {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.formdiv {
+    height: 600px;
+}
+
+.devisform {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: auto;
+}
+
+.formlabel {
+    text-align: left;
+}
+
+.lastnameinput, .firstnameinput, .emailinput, .projectdescription, .locationinput, .dateinput {
+    justify-self: center;
+}
+
+.formlabel, .lastnameinput, .firstnameinput, .emailinput, .projectdescription, .locationinput, .dateinput {
+    margin: 10px;
+}
+
+.submitbutton {
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 10px;
+    width: fit-content;
+    align-self: center;
+}
+
+.submitbutton:hover {
+    background-color: lightgrey;
+    color: black;
+}
