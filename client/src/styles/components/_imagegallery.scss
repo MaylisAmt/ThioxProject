@@ -53,3 +53,22 @@
     background-color: slategray;
     opacity: 0.6;
 }
+
+@media (max-width: 850px) {
+    .btnleft, .btnright, .closingbtn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .btnleft img, .btnright img, .closingbtn img {
+        width: 12px;
+    }
+
+    .btnleft {
+        left : 100px;
+    }
+
+    .btnright {
+        right: 100px;
+    }
+}
