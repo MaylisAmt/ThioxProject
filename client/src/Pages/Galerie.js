@@ -9,7 +9,6 @@ const Galerie = () => {
             <Logo />
             <Navigation />
             <ImageGallery />
-            <p>Ici se trouveront les photos</p>
         </div>
     );
 };

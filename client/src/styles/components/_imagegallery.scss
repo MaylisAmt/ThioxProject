@@ -1,0 +1,55 @@
+.btnleft, .btnright {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 2px solid transparent;
+    top: 50%;
+    transform: translateY(-50%); /* Permet de bien centrer verticalement les boutons */
+    cursor: pointer;
+    display: flex; /* Ici le flex est utilisé pour bien centrer la flèche à l'intérieur du cercle. En inline il serait légèrement décalé */
+    justify-content: center;
+    align-items: center;
+}
+
+.btnleft img, .btnright img {
+    width: 10px; 
+}
+
+.btnleft {
+    left: 150px;
+}
+
+.btnright {
+    right: 150px;
+}
+
+.btnleft:hover, .btnright:hover {
+    background-color: slategray;
+    opacity: 0.6;
+}
+
+.closingbtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex; /* Ici le flex est utilisé pour bien centrer la flèche à l'intérieur du cercle. En inline il serait légèrement décalé */
+    justify-content: center;
+    align-items: center;
+}
+
+.closingbtn img {
+    width: 10px;
+}
+
+.closingbtn:hover {
+    background-color: slategray;
+    opacity: 0.6;
+}

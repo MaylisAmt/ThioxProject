@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import leftarrow from "../assets/arrows/left-arrow.png"
+import rightarrow from "../assets/arrows/right-arrow.png"
+import closingcross from "../assets/arrows/close.png"
 
 const images = [
     "../images/city.jpg",
@@ -37,17 +40,18 @@ const ImageGallery = () => {
                 <div style={{
                     width: '100%',
                     height: '100vh',
-                    background: 'black',
+                    background: '#00000096',
                     position: 'fixed',
+                    top: '0',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
                     overflow: 'hidden'
                 }}>
-                    <button onClick={() => imgAction()} style={{position: 'absolute', top: '10px', right: '10px'}}>X</button>
-                    <button onClick={() => imgAction('prev-img')}>Précédent</button>
-                    <img src={data.img} style={{width: 'auto', maxWidth:'90%', maxHeight: '90%',}} alt="" />
-                    <button onClick={() => imgAction('next-img')}>Suivant</button>
+                    <button className='closingbtn' onClick={() => imgAction()}><img src={closingcross} alt="close"/></button>
+                    <button className='btnleft' onClick={() => imgAction('prev-img')}><img src={leftarrow} alt='previous'/></button>
+                    <img src={data.img} style={{width: 'auto', objectFit: 'fill', maxWidth:'90%', maxHeight: '90vh',}} alt="" />
+                    <button className='btnright' onClick={() => imgAction('next-img')}><img src={rightarrow} alt='next'/></button>
                 </div>
             }
         <div style={{padding: '10px'}}>
@@ -72,3 +76,6 @@ const ImageGallery = () => {
 };
 
 export default ImageGallery;
+
+
+// style={{position: 'absolute', top: '10px', right: '10px'}}
