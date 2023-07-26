@@ -7,8 +7,6 @@ const Contact = () => {
         <div>
             <Logo />
             <Navigation />
-            <p>Ici se trouvera un formulaire de contact</p>
-            <p>Peut-être aussi un générateur de devis</p>
         </div>
     );
 };

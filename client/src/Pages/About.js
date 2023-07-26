@@ -8,10 +8,6 @@ const About = () => {
             <Logo />
             <Navigation />
             <h1>About</h1>
-            <br />
-            <p>Ceci est un paragraphe</p>
-            <br/>
-            <p>Ceci est un second paragraphe</p>
         </div>
     );
 };

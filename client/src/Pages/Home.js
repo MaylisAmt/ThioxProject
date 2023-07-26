@@ -10,7 +10,6 @@ const Home = () => {
             <Navigation />
             <div className='home' >
             <img src= {Photo} alt="photographer"/>
-            <p>Ici se trouvera un court texte de description</p>
             </div>
         </div>
     );
